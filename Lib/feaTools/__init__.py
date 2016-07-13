@@ -14,7 +14,7 @@ to a parser function. For example, to output FDK syntax from a file
 (Yes, I know this is a silly example):
 
     writer = FDKSyntaxFeatureWriter()
-    parseFeatures(myFeatureText, writer)
+    parseFeatures(writer, myFeatureText)
     myNewFeatureText = writer.write()
 
 Writers can be used inpendently of the parse function:
